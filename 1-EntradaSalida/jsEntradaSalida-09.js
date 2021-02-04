@@ -5,21 +5,21 @@ mostrar el nuevo sueldo con un aumento del 10 %
 en el cuadro de texto "RESULTADO".*/
 function mostrarAumento()
 {
-let sueldo;
+	let sueldo;
 
-let nuevosueldo;
+	let nuevosueldo;
 
-let aumento;
+	let aumento;
 
-sueldo = parseFloat(document.getElementById ("txtIdSueldo").value);
+	sueldo = parseFloat(document.getElementById ("txtIdSueldo").value);
 
-aumento = sueldo * 10/100;
+	aumento = sueldo * 10/100;
 
-nuevosueldo = sueldo + aumento;
+	nuevosueldo = sueldo + aumento;
 
-document.getElementById("txtIdResultado").value = nuevosueldo;
+	document.getElementById("txtIdResultado").value = nuevosueldo;
 
-
+}
 
 
 
@@ -37,8 +37,4 @@ nuevosueldo = sueldo * aumento + sueldo;
 
 alert("El nuevo sueldo es " + nuevosueldo) */
 
-// ASÍ HICE YO EL EJERCICIO. ESTARÁ BIEN?
-
-
-
-}
+// ASÍ HICE YO EL EJERCICIO. ESTARÁ BIEN? NO, PORQUE HAY QUE PRESENTARLO EN LA CAJA DE TEXTO. POR ESO, LA ÚLTIMA LINEA CON DOCUMENTE.ELEMENTBYID
