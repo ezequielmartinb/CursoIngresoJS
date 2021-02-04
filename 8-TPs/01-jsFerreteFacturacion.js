@@ -5,13 +5,88 @@ C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
 */
 function Sumar () 
 {
-	
+	let precio1;
+    
+    let precio2;
+
+    let precio3;
+
+    let suma;
+
+    precio1 = document.getElementById ("txtIdPrecioUno").value;
+
+    precio1 = parseFloat(precio1);
+
+    precio2 = document.getElementById ("txtIdPrecioDos").value;
+
+    precio2 = parseFloat(precio2);
+
+    precio3 = document.getElementById ("txtIdPrecioTres").value;
+
+    precio3 = parseFloat(precio3);
+
+    suma = precio1 + precio2 + precio3;
+
+    suma = suma.toFixed(2);
+
+    alert("La suma de los tres productos es de $" + suma)
+
+
 }
 function Promedio () 
 {
-	
+    let precio1;
+    
+    let precio2;
+
+    let precio3;
+
+    let promedio;
+
+    precio1 = document.getElementById ("txtIdPrecioUno").value;
+
+    precio1 = parseFloat(precio1);
+
+    precio2 = document.getElementById ("txtIdPrecioDos").value;
+
+    precio2 = parseFloat(precio2);
+
+    precio3 = document.getElementById ("txtIdPrecioTres").value;
+
+    precio3 = parseFloat(precio3);
+
+    promedio = (precio1 + precio2 + precio3) / 3;
+
+    promedio = promedio.toFixed(2);
+
+    alert("El promedio de los tres productos es de $" + promedio)
+
 }
 function PrecioFinal () 
 {
-	
+	let precio1;
+    
+    let precio2;
+
+    let precio3;
+
+    let preciofinal;
+
+    precio1 = document.getElementById ("txtIdPrecioUno").value;
+
+    precio1 = parseFloat(precio1);
+
+    precio2 = document.getElementById ("txtIdPrecioDos").value;
+
+    precio2 = parseFloat(precio2);
+
+    precio3 = document.getElementById ("txtIdPrecioTres").value;
+
+    precio3 = parseFloat(precio3);
+
+    preciofinal = (precio1 + precio2 + precio3) *0.21 + precio1 + precio2 + precio3;
+
+    preciofinal = preciofinal.toFixed(2); // toFixed es para redondear el resultado. Lo que va entre parentesis son los digitos que quiero ver.
+
+    alert("El precio final de los tres productos es de $" + preciofinal) 
 }
