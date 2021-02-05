@@ -52,4 +52,5 @@ function mostrar()
 
   	document.getElementById("txtIdNombre").value = "";
 
-	document.getElementById("txtIdEdad").value = ""; 	}*/
+	document.getElementById("txtIdEdad").value = ""; 	
+}*/

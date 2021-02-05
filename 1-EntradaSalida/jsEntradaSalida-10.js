@@ -19,7 +19,7 @@ function mostrarAumento()
 
 	importefinal = importefinal.toFixed(2); // toFixed(x) para que solo tome dos decimales el importe final. Tiene que ir en una linea separada, no junto a la linea 22
 
-	document.getElementById("txtIdResultado").value = importefinal;
+	document.getElementById("txtIdResultado").value = importefinal; // Esto es para mostrar el resultado en la caja de texto Resultado
 }
 
 /*	Ezequiel Brañanova

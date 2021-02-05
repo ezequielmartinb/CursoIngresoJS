@@ -3,7 +3,7 @@ Debemos lograr tomar un nombre con 'prompt'
 y luego mostrarlo por 'alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
-	let nombre; // Para consultar: Porque no se puede poner acá nombre = prompt? (error function prompt() { [native code] })
+	let nombre;
 
 	nombre = prompt ("Ingrese su nombre");
 
