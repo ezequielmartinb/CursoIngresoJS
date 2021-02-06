@@ -89,9 +89,7 @@ function mostrarAumento()
 
 	mensaje="Usted compró un " + descripcionProducto + " con " + porcentaje + "% de descuento y el precio final es " + precioFinal;
 
-	alert(mensaje);
-
-	document.getElementById("txtIdImporte").value="";
+	document.getElementById("txtIdResultado").value=mensaje;
 
 
 }*/
