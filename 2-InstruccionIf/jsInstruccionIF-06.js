@@ -59,8 +59,8 @@ maximo 4 microprocesos
 	}
 
 */
-// minimo 1 
-//maximo 2 
+// microprocesos minimo 1 
+// microprocesos maximo 2 
 	if(edad<13)
 	{
 		alert("niño");
