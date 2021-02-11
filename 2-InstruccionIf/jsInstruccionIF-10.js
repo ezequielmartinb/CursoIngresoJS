@@ -5,40 +5,71 @@
 
 function mostrar()
 {
-	let numero;
+	let notaRandom;
 
-	let maximo;
+	let numeroRandom;
 
-	let minimo;
+	numeroRandom= (Math.random() *9) + 1;
 
-	let random;
+	notaRandom=Math.round(numeroRandom);
 
-	maximo=10;
+	notaRandom=parseFloat(notaRandom);
 
-	minimo=1;
+	console.log(notaRandom);
 
-	random=(maximo - minimo) + minimo;
-
-	random=parseFloat(random);
-
-	numero=Math.round((Math.random() * (random)));
-
-	numero=parseFloat(numero);
-
-	console.log(numero);
-
-	if (numero>8)
+	if (notaRandom>8)
 	{
 		alert("EXCELENTE");
 	}
 	else
-		if (numero>3 && numero<9)
-		{
-			alert("APROBÓ");
-		}
-		else
+	{	if (notaRandom<4)
 		{
 			alert("Vamos, la proxima se puede");
 		}
-
+		else
+		{
+			alert("APROBÓ");
+		}
+	}
 }//FIN DE LA FUNCIÓN
+
+
+	/* Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
+	"EXCELENTE" para notas igual a 9 o 10,
+	"APROBÓ" para notas mayores a 4,
+	"Vamos, la proxima se puede" para notas menores a 4 
+	MOSTRAR CON UN SOLO ALERT
+
+	function mostrar()
+	{
+		let notaRandom;
+	
+		let numeroRandom;
+
+		let mensaje;
+	
+		numeroRandom=(Math.random() *9) + 1;
+	
+		notaRandom=Math.round(numeroRandom);
+	
+		notaRandom=parseFloat(notaRandom);
+	
+		console.log(notaRandom);
+	
+		if (notaRandom>8)
+		{
+			mensaje = "EXCELENTE " + notaRandom;
+		}
+		else
+		{	if (notaRandom<4)
+			{
+				mensaje = "Vamos, la proxima se puede " + notaRandom;
+			}
+			else
+			{
+				mensaje = "APROBÓ " + notaRandom;
+			}
+		}
+
+		alert(mensaje);
+	}*/
