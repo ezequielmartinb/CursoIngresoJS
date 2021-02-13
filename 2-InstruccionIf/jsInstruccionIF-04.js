@@ -9,20 +9,20 @@ function mostrar()
 	
 	edad=parseInt(edad);
 
-	if(edad>12)
-	{	
-		if (edad<18)
-		{
-			alert("Usted es un adolecente.");
-		}
+	if(edad>12 && edad<18)
+	{		
+		alert("Usted es un adolecente.");
 	}
 
 	/*
-		Otra forma de expresar el IF es así:
+		Otra forma de expresar el IF SIN UNA PROPOSICION LOGICA COMPUESTA es así:
 
-		if(edad>12 && edad<18)
+		if(edad>12)
 		{
-			alert("Usted es un adolencente.");
+			if (edad<18)
+			{
+			alert("Usted es un adolecente.");
+			}
 		}
 	*/
 

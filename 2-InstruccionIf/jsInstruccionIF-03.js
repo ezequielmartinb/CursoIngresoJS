@@ -11,14 +11,12 @@ function mostrar()
 		{
 			alert("Usted es mayor de edad.");
 		}
-
-		
-	if (edad<18)
+	else
 		{
-			alert("Usted es menor de edad.");
+			alert("Usted es menor de edad");
 		}	
-
-/* OTRA FORMA DE RESOLVERLO ES CON EL "ELSE"
+		
+	/* OTRA FORMA DE RESOLVERLO ES CON DOS IFS
 
 	let edad;
 	
@@ -31,9 +29,9 @@ function mostrar()
 			alert("Usted es mayor de edad");
 		}
 
-	else
+	if (edad<18)
 		{
-			alert("Usted es menor de edad");
+			alert("Usted es menor de edad.");
 		}	
 
 
