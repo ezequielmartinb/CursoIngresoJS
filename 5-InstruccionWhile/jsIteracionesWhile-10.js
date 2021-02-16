@@ -12,18 +12,32 @@ hasta que el usuario quiera, mostrar:
 9-Diferencia entre positivos y negativos, (positvos-negativos). */
 function mostrar()
 {
-	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	let numeroIngresado;
+	let contador;
+	let acumulador;
+	let respuesta;
 
+	contador=0;
+	acumulador=0;
 	respuesta="si";
 
 	while(respuesta=="si")
 	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		contador=contador+1;
+		numeroIngresado=prompt("Ingrese un número: ");
+		numeroIngresado=parseInt(numeroIngresado);
+		respuesta=prompt("¿Desea continuar ingresando números?");
+		if(numeroIngresado>0)
+		{
+			acumulador = acumulador + numeroIngresado;
+		}
+		else
+		{
+			 
+		}
+	}
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+
+
+
 }//FIN DE LA FUNCIÓN
