@@ -79,7 +79,7 @@ function ComenzarIngreso ()
 
 	while(isNaN(sueldoBrutoIngresado)==true || sueldoBrutoIngresado<8001)
 	{
-		sueldoBrutoIngresado=prompt("ERROR. Ingrese su sueldo bruto: ");
+		sueldoBrutoIngresado=prompt("ERROR. Ingrese su sueldo bruto (no menor a $8000): ");
 	}
 
 	sueldoBrutoIngresado=parseInt(sueldoBrutoIngresado);
@@ -101,7 +101,7 @@ function ComenzarIngreso ()
 
 	while(!(nacionalidadIngresada=="A" || sexoIngresado=="E" || nacionalidadIngresada== "N"))
 	{
-		nacionalidadIngresada=prompt("ERROR. Ingrese su nacionalidad: ");
+		nacionalidadIngresada=prompt("ERROR. Ingrese su nacionalidad Argentino (A); Extrajero (E) o Nacionalizado (N): ");
 	}
 
 	switch(nacionalidadIngresada)
